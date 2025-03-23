@@ -1,0 +1,230 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header */
+header {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0;
+    background: url('../../images/hero.jpg') no-repeat center center/cover;
+    color: black;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+/* Blog section */
+.blog-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.blog-post h3 {
+    margin: 10px 0;
+}
+
+.blog-post p {
+    font-size: 14px;
+    color: #555;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 20px 20px;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.add-post-button {
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #4CAF50, #2E8B57); /* Gradient xanh lá */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button {
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #2E8B57;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+    background: #4CAF50;
+}
+
+.back-button {
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #851326;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background: #B22222;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%;  /* Độ rộng full container */
+    padding: 12px;  /* Tăng khoảng cách bên trong */
+    font-size: 16px;  /* Tăng cỡ chữ */
+    border: 1px solid #ccc;  /* Viền */
+    border-radius: 6px;  /* Bo góc */
+    box-sizing: border-box;  /* Tránh bị tràn ra ngoài */
+}
+
+textarea {
+    height: 150px;  /* Tăng chiều cao cho textarea */
+    resize: vertical;  /* Cho phép thay đổi chiều cao */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
