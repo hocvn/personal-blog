@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       article.classList.add("blog-post");
 
       article.innerHTML = `
-                <img src="${"../../images/blog.jpg"}" alt="${post.title}">
+                <img src="${"images/blog.jpg"}" alt="${post.title}">
                 <h3>${post.title}</h3>
                 <p>${post.content.substring(0, 40)}...</p>
                 <a href="#" class="read-more" data-id="${post._id}">Đọc tiếp</a>
